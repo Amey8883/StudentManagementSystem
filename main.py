@@ -25,5 +25,20 @@ while True:
     elif choice == "3":
         print("Thank you!")
         break
+    elif choice == "4":
+    delete_student()
     else:
         print("Invalid choice")
+
+
+def delete_student():
+    name = input("Enter student name to delete: ")
+
+    if name in students:
+        students.remove(name)
+        print("Student deleted successfully!")
+    else:
+        print("Student not found!")
+print("4. Delete Student")
+
+
